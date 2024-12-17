@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Flask Meme Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="30;url=http://127.0.0.1:5000" />
+    <style>
+      body {
+        background-color: #3b3b3b;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      h1, h2 {
+        margin-top: 20px;
+      }
+      h3 img {
+        max-width: 80%;
+        max-height: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A website to gather some memes.</h1>
+    <h2>Here is your meme! Refreshes every 30 seconds.</h2>
+    <h3><img src="{{meme_pic}}" alt="Random Meme"></h3>
+    <h3>Current subreddit: {{subreddit}}</h3>
+  </body>
+</html>
